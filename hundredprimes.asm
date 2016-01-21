@@ -4,7 +4,7 @@ N: .word 0										#setting variable N = input
 i: .word 0										#setting variable i = number of primes so far
 max: .word 100							                 	#setting variable
 txt: .asciiz "First 100 prime numbers: \n"						#printing 
-br: .asciiz "\n"									#line break
+br: .asciiz "\n"										#line break
 comma: .ascii ", "									#more printing 
 
 .text										    	#alphanumeric identifier
