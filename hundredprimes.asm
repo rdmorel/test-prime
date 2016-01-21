@@ -26,7 +26,7 @@ main:										    	#setting variables
 
 outer:										  	#outer loop
 
-	addi $s0, $s0, 1				  				#increment N
+	addi $s0, $s0, 1				  					#increment N
 	slt $t0, $s6, $s5								#if i < max, t0 = 1, else t0 = 0
 	bne $t0, $zero, inner								#if t0 != 0 we haven't hit 100 primes yet, go back to inner loop
 	j exit									  	#else go back to main
@@ -47,7 +47,7 @@ increment:										#found a prime, increment i
 	la $a0, comma									#passing string
 	syscall								       	        #execute
 
-	addi $s6, $s6, 1								#increment i
+	addi $s6, $s6, 1									#increment i
 	j outer								  		#go to next value of N
 
 exit:										    	#exit function
