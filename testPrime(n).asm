@@ -2,8 +2,8 @@
 
 N:	.word 0										#setting variable
 Ni: .word 1										#setting variable
-txt: .ascii "Input of: "									#printing
-br: .asciiz "\n"										#line break
+txt: .ascii "Input of: "								#printing
+br: .asciiz "\n"									#line break
 res: .ascii "Returns: "									#more printing
 
 .text										    	#alphanumeric identifier
